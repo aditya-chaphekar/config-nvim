@@ -5,6 +5,6 @@
 ## Installation
 
 ```sh
-git clone
+git clone git@github.com:aditya-chaphekar/config-nvim.git
 cp config-nvim/* ~/.config/nvim/:
 ```
