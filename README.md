@@ -6,5 +6,5 @@
 
 ```sh
 git clone git@github.com:aditya-chaphekar/config-nvim.git
-cp config-nvim/* ~/.config/nvim/:
+cp -r config-nvim/* ~/.config/nvim/
 ```
