@@ -1,7 +1,3 @@
-Sure! Here's a clean and professional `README.md` you can use for the [`config-nvim`](https://github.com/aditya-chaphekar/config-nvim) repo:
-
----
-
 # 💤 My Neovim Configuration
 
 This is my personal Neovim configuration built with **Lua** and managed using the [Lazy.nvim](https://github.com/folke/lazy.nvim) plugin manager. It focuses on speed, simplicity, and developer productivity.
@@ -57,6 +53,3 @@ Feel free to tweak the configs under `lua/core/` or add new plugins in `lua/plug
 
 MIT License. Feel free to copy, modify, and use it for your own dotfiles.
 
----
-
-Would you like me to tailor it more to your development stack or preferences?
