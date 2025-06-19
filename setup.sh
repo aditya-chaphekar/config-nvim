@@ -170,6 +170,7 @@ require("lazy").setup({
   { import = "plugins.format_lint" },
   { import = "plugins.comment" },
   { import = "plugins.todo_comments" },
+  { import = "plugins.terminal" },
 }, {
   performance = {
     rtp = {
@@ -689,6 +690,31 @@ return {
       { "]t", function() require("todo-comments").jump_next() end, desc = "Next TODO Comment" },
       { "[t", function() require("todo-comments").jump_prev() end, desc = "Previous TODO Comment" },
     },
+  },
+}
+EOF
+
+# Create terminal.lua
+cat >~/.config/nvim/lua/plugins/terminal.lua <<'EOF'
+return {
+  {
+    "akinsho/toggleterm.nvim",
+    version = "*",
+    config = function()
+      require("toggleterm").setup({
+        open_mapping = [[<C-`>]],
+        shade_terminals = true,
+        direction = "float",
+        float_opts = {
+          border = "curved",
+        },
+      })
+      -- Keybindings for terminal
+      vim.keymap.set({"n", "t"}, "<leader>tt", "<cmd>ToggleTerm<cr>", {desc = "Toggle terminal"})
+      vim.keymap.set({"n", "t"}, "<leader>th", "<cmd>ToggleTerm direction=horizontal<cr>", {desc = "Horizontal terminal"})
+      vim.keymap.set({"n", "t"}, "<leader>tv", "<cmd>ToggleTerm direction=vertical<cr>", {desc = "Vertical terminal"})
+      vim.keymap.set({"n", "t"}, "<leader>tf", "<cmd>ToggleTerm direction=float<cr>", {desc = "Floating terminal"})
+    end,
   },
 }
 EOF

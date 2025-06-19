@@ -16,6 +16,7 @@ This project provides a one-command setup for a modern, full-featured Neovim dev
   - Treesitter syntax highlighting
   - Format-on-save and linting for many languages
   - Commenting, TODO management, and more
+- **Integrated terminal** with [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim) and convenient keybindings for floating, horizontal, and vertical terminals.
 
 ## Prerequisites
 
@@ -73,7 +74,7 @@ This project provides a one-command setup for a modern, full-featured Neovim dev
 - **Git:** gitsigns.nvim
 - **Syntax:** nvim-treesitter
 - **Formatting/Linting:** conform.nvim, nvim-lint, prettier, eslint, black, ruff, shfmt, hadolint, golangci-lint
-- **Other:** Comment.nvim, todo-comments.nvim
+- **Other:** Comment.nvim, todo-comments.nvim, **toggleterm.nvim**
 
 ## Troubleshooting
 
@@ -99,8 +100,11 @@ This project provides a one-command setup for a modern, full-featured Neovim dev
 | `<leader>hd`       | Normal    | Diff this                          | gitsigns.nvim          |
 | `<leader>r`        | Normal    | LSP Rename (group)                 | which-key/LSP          |
 | `<leader>t`        | Normal    | TODO Comments (group)              | which-key/todo-comments|
-| `<leader>tt`       | Normal    | Search TODOs                       | todo-comments.nvim     |
-| `<leader>tq`       | Normal    | TODO Quickfix List                 | todo-comments.nvim     |
+| `<leader>tt`       | Normal/Terminal | Toggle terminal (default/floating)      | toggleterm.nvim         |
+| `<leader>th`       | Normal/Terminal | Horizontal terminal                     | toggleterm.nvim         |
+| `<leader>tv`       | Normal/Terminal | Vertical terminal                       | toggleterm.nvim         |
+| `<leader>tf`       | Normal/Terminal | Floating terminal                       | toggleterm.nvim         |
+| `<C-\``>           | Normal/Terminal | Toggle terminal (default mapping)       | toggleterm.nvim         |
 | `]t`               | Normal    | Next TODO Comment                  | todo-comments.nvim     |
 | `[t`               | Normal    | Previous TODO Comment              | todo-comments.nvim     |
 | `gd`               | Normal    | Go to definition                   | LSP                    |
