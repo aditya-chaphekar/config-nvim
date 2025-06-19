@@ -27,8 +27,8 @@ This project provides a one-command setup for a modern, full-featured Neovim dev
 
 1. **Clone this repository:**
    ```sh
-   git clone <repo-url> nvim-config-commands
-   cd nvim-config-commands
+   git clone git@github.com:aditya-chaphekar/config-nvim.git aditya-nvim-config
+   cd aditya-nvim-config
    ```
 
 2. **Run the setup script:**
